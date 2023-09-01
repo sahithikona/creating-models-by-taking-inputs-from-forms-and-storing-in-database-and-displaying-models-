@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>schools</h1></center>
+    <center>
+        <table border="1px">
+            <tr>
+                <th>school_Name</th>
+                <th>school_Principal</th>
+                <th>school_Location</th>
+            </tr>
+            
+            {% for  ob in qsso %}
+            <tr>
+                <td>{{ob.scname}}</td>
+                <td>{{ob.scprincipal}}</td>
+                <td>{{ob.sclocation}}</td> 
+            </tr>
+            {% endfor %}
+        </table> 
+    </center>
+</body>
+</html>
